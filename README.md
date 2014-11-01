@@ -7,4 +7,4 @@ PiggyDB is then reachable on `http://localhost:8888`. Default user is `owner` an
 # Use a Data Container
 
     docker run --name piggydb-data -v /srv/piggydb busybox true
-    docker run --name piggydb --volumes-from piggydb-data -p 8888:8080 piggydb
+    docker run --name piggydb --volumes-from piggydb-data -p 8888:8080 phylor/piggydb
